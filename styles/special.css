@@ -5,3 +5,65 @@
 *{
     overflow-x: hidden;
 }
+
+
+
+/* link section  */
+
+.link-page {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    height: 550px;
+}
+
+.link-title{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 28px;
+    position: relative;
+}
+.link-page .left img{
+    height: 450px;
+}
+
+.link-page .right{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.link-page .right .box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right .box .top{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 10px;
+}
+.right .box .top img{
+    width: 100px;
+}
+.right .box a{
+    overflow: hidden;
+    padding: 7px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.right .box a i{
+    padding-left: 8px;
+}
+@media(max-width:678px){
+    .link-page .left img{
+        height: 300px;
+        margin-top: 110px;
+    }
+}
