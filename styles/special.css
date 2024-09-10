@@ -67,3 +67,84 @@
         margin-top: 110px;
     }
 }
+
+
+
+/* ANIMATION  */
+
+header{
+    transition: 1s;
+    animation: fade 0.6s;
+}
+@keyframes fade {
+    0%{
+        transition: 1s;
+        transform: scale(0.7);
+    }
+    100%{
+        transition: 1s;
+        transform: scale(1);
+    }
+}
+
+
+
+.home-content{
+    transition: 1s;
+}
+.home-name,
+.home-profession{
+    transition: 1s;
+    animation: slideUp 0.6s;
+}
+
+@keyframes slideUp {
+    0%{
+        transition: 1s;
+        transform: translateY(20px);
+    }
+    100%{
+        transition: 1s;
+        transform: translateY(0);
+    }
+}
+
+#cv{
+    transition: 1s;
+    animation: pop 1s;
+}
+
+@keyframes pop {
+    0%{
+        transition: 1s;
+        transform: scale(0.8);
+    }
+    100%{
+        transition: 1s;
+        transform: scale(1);
+    }
+}
+
+
+.home-social-link{
+    transition: 1s;
+    animation: fade 1s;
+}
+
+.section-title{
+    transition: 1s ;
+    animation: slideUp 1s ;
+}
+
+
+.contact-button,
+.footer-logo{
+    animation: pop 2s;
+}
+
+
+@media (min-width:1150px){
+    .section{
+        margin-left: 30px;
+    }
+}
