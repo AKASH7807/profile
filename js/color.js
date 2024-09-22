@@ -6,3 +6,4 @@ icon.addEventListener('click',()=>{
     icon.classList.toggle("fa-moon");
     profile.classList.toggle("active");
 });
+

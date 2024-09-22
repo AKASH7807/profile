@@ -1,15 +1,15 @@
 const navMenu = document.getElementById("nav-menu");
-const navToggle= document.getElementById("nav-toggle");
-const navClose= document.getElementById("nav-close");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 
-if(navToggle){
-    navToggle.addEventListener('click',()=>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     })
 }
 
-if(navClose){
-    navClose.addEventListener('click',()=>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     })
 }
@@ -17,10 +17,10 @@ if(navClose){
 // CHANGE BACKGROUND HEADER//
 
 const bgHeader = () => {
-    const header =document.getElementById("header");
-    this.scrollY >= 50? header.classList.add('bg-header') :header.classList.remove('bg-header');
+    const header = document.getElementById("header");
+    this.scrollY >= 50 ? header.classList.add('bg-header') : header.classList.remove('bg-header');
 }
-window.addEventListener('scroll',bgHeader);
+window.addEventListener('scroll', bgHeader);
 
 //SERVICE MODAL //
 
@@ -33,14 +33,14 @@ let activeModal = (modalClick) => {
 }
 
 modalButton.forEach((modalButton, i) => {
-    modalButton.addEventListener('click',() => {
+    modalButton.addEventListener('click', () => {
         activeModal(i)
     })
 })
 
-modalClose.forEach((modalClose) =>{
-    modalClose.addEventListener('click',()=>{
-        modal.forEach((modalRemove) =>{
+modalClose.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modal.forEach((modalRemove) => {
             modalRemove.classList.remove("active-modal");
         })
     })
@@ -58,19 +58,32 @@ const iconTheme = 'ri-sun-line';
 const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 
-const getCurrentTheme =() => document.body.classList.contains(darkTheme) ? "dark" :"light";
-const getCurrentIcon =() => document.body.classList.contains(darkTheme) ? "ri-moon-line" :"ri-sun-line";
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () => document.body.classList.contains(darkTheme) ? "ri-moon-line" : "ri-sun-line";
 
-if(selectedTheme)
-{
-    document.body.classList[selectedTheme ==='dark' ?'add' : 'remove'](darkTheme);
-    document.body.classList[selectedIcon ==='ri-moon-line' ?'add' : 'remove'](iconTheme);
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    document.body.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
 }
 
-themeButton.addEventListener('click', () =>{
+themeButton.addEventListener('click', () => {
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme);
+    themeButton.style.color = "#fff"
 
-    localStorage.setItem('selected-Theme',getCurrentTheme());
-    localStorage.setItem('selected-icon',getCurrentIcon());
+    localStorage.setItem('selected-Theme', getCurrentTheme());
+    localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+
+
+//color button
+const colorBtn = document.getElementById('colors')
+const icon = document.getElementById('icon')
+icon.addEventListener('click', () => {
+    colorBtn.classList.toggle('active')
+})
+
+function color(color) {
+    document.body.style.background = color;
+}

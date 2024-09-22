@@ -1,59 +1,63 @@
-
 @font-face {
-    font-family:"disney";
+    font-family: "disney";
     src: url(font/waltograph42.otf);
 }
 
 @font-face {
-    font-family:"normal";
+    font-family: "normal";
     src: url(font/sofia.otf);
 }
 
 @font-face {
-    font-family:"font";
+    font-family: "font";
     src: url(font/Geizer.otf);
 }
 
-#profile-cart{
+#profile-cart {
     justify-content: center;
     display: flex;
-    
+
 }
 
-.profile{
+.profile {
     width: 80%;
     max-width: 320px;
     background: #32384f;
-    text-align:center;
+    text-align: center;
     padding: 20px 20px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     color: #fff;
     user-select: none;
 }
-.active{
+
+.active {
     background: #fff;
     color: #32384f;
 }
-.top-icons{
+
+.top-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-i:hover{
+
+i:hover {
     cursor: pointer;
     color: #e4e;
 }
-.fa-heart{
-margin-left:10px;
+
+.fa-heart {
+    margin-left: 10px;
 }
-#change{
+
+#change {
     margin: 0 10px;
     color: #ff7200;
 }
 
-.user-img{
+.user-img {
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -61,27 +65,32 @@ margin-left:10px;
     background-size: contain;
     border-radius: 50%;
 }
-#p-card{
+
+#p-card {
     justify-content: center;
     display: flex;
 }
-.profile h2{
+
+.profile h2 {
     font-weight: 600;
     font-size: 22px;
     margin-top: 20px;
-    font-family:"normal";
+    font-family: "normal";
 }
-.profile p{
+
+.profile p {
     letter-spacing: 1px;
     font-size: 12px;
-    font-family:"normal";
+    font-family: "normal";
 }
-.profile-card{
+
+.profile-card {
     justify-content: center;
     display: flex;
     width: 100%;
 }
-.btn{
+
+.btn {
     color: #fff;
     border-radius: 30px;
     padding: 10px 40px;
@@ -89,33 +98,38 @@ margin-left:10px;
     display: inline-block;
     margin: 25px 0;
     font-size: 15px;
-    font-family:"font";
+    font-family: "font";
     letter-spacing: 2px;
     transition: 1s;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(0.9);
     transition: 1s;
 }
-.social-media{
-    margin-top:10px;
+
+.social-media {
+    margin-top: 10px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.social-media img{
+
+.social-media img {
     width: 60px;
     border-radius: 50%;
 }
-.social-media h3{
+
+.social-media h3 {
     font-weight: 500;
     font-size: 16px;
-    font-family:"disney";
+    font-family: "disney";
 }
-.social-media p{
-    font-family:"disney";
+
+.social-media p {
+    font-family: "disney";
     font-size: 16px;
 }
 
-.social-media div{
+.social-media div {
     margin: 10px 0 30px;
 }
