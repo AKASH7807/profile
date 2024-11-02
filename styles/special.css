@@ -7,7 +7,18 @@
     overflow-x: hidden;
 }
 
+/* logo name  */
+.home-name{
+    background: -webkit-linear-gradient(#01074c, #0014f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
+.home-profession span{
+    background: -webkit-linear-gradient(#290d64, #3604a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* link section  */
 

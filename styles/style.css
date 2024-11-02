@@ -577,7 +577,6 @@ header {
 }
 
 .work-img {
-    filter: grayscale(1);
     transition: filter 0.5s, transform 0.5s;
 }
 
