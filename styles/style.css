@@ -355,6 +355,7 @@ header {
 
 .bg-header :is(.nav-logo, .nav-toggle, .list, #close, #white) {
     color: var(--title-color) !important;
+    
 }
 
 #cv {
@@ -852,12 +853,12 @@ header {
 
 /* ==========scoll bar ======== */
 ::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 0.5rem;
     background-color: hsl(var(--hue), 20%, 85%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(99, 221, 243, 0.753);
+    background-color:#6B3DF560;
 }
 
 .dark-theme::-webkit-scrollbar {
@@ -1009,6 +1010,23 @@ body.dark-theme {
 
 }
 
+/* LARGE SCREEN LAYOUT  */
+@media screen and (min-width:900px) {
+    .work-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .swiper-wrapper .testimonial-card:nth-child(2) {
+        padding: 20px !important;
+    }
+
+}
 
 
 /* nav overflow control  */
@@ -1026,4 +1044,9 @@ header::-webkit-scrollbar {
     .scrollup {
         left: 45%;
     }
+}
+
+/* NAV LIST DARK  */
+.nav-dark a{
+    color:var(--first-color) !important;
 }

@@ -22,48 +22,48 @@ ScrollReveal().reveal(".mobile", {
 // work projects
 ScrollReveal().reveal(".work-card", {
     ...scrollRevealOption,
-    origin:"bottom",
+    origin: "bottom",
 });
 
 
 //testimonals
 ScrollReveal().reveal(".testimonial-card", {
     ...scrollRevealOption,
-    origin:"right",
+    origin: "right",
 });
 
 //service card 
 ScrollReveal().reveal(".services-card", {
     ...scrollRevealOption,
-    origin:"bottom",
+    origin: "bottom",
 });
 
 //nav logo 
 ScrollReveal().reveal(".nav-logo", {
     ...scrollRevealOption,
-    origin:"left",
+    origin: "left",
 });
 
 
 ScrollReveal().reveal("#theme-button", {
     ...scrollRevealOption,
-    origin:"right",
+    origin: "right",
 });
 
 
 //about page 
 ScrollReveal().reveal(".footer-logo", {
     ...scrollRevealOption,
-    origin:"left",
+    origin: "left",
 });
 
 ScrollReveal().reveal(".grid-card", {
     ...scrollRevealOption,
-    origin:"left",
+    origin: "left",
 });
 
 //work profile
 ScrollReveal().reveal("#profile-cart", {
     ...scrollRevealOption,
-    origin:"left",
+    origin: "left",
 });
