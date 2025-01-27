@@ -10,10 +10,12 @@
         integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/about.css">
 </head>
 
 <body>
 
+    <!-- Header  -->
     <header class="header pages" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">Akash</a>
@@ -48,6 +50,7 @@
         </nav>
     </header>
 
+    <!-------Proflie Card------>
     <main class="main">
         <section class="about section">
             <h2 class="section-title">
@@ -72,30 +75,69 @@
                             the projects carried out.
                         </p>
                     </div>
-                    <a href="contact.html" class="about-button btn">Contact Me</a>
+                    <a href="contact.html" class="about-button ">
+                        <button> Contact Me
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
+                            </div>
+                        </button>
+                    </a>
                 </div>
+
+                <!-----------Skills List------->
                 <div class="about-skills">
                     <h3 class="about-skills-title">My Skills Are</h3>
-                    <div class="about-skill-content grid">
-                        <img src="images/html-1.svg" class="about-skills-img">
-                        <img src="images/css-3.svg" class="about-skills-img">
-                        <img src="images/javascript-1.svg" class="about-skills-img">
-                        <img src="images/bootstrap-icon.svg" class="about-skills-img">
-                        <img src="images/react-2.svg" class="about-skills-img">
-                        <img src="images/tailwindcss.png" class="about-skills-img">
-                        <img src="images/figma-5.svg" class="about-skills-img">
-                        <img src="images/sass.png" class="about-skills-img">
-                        <img src="images/github-icon-1.svg" class="about-skills-img">
-                        <img src="images/php-1.svg" class="about-skills-img">
-                        <img src="images/mysql-logo.svg" class="about-skills-img">
-                        <img src="images/c.svg" class="about-skills-img">
+                    <div class="skills-container container">
+                        <div class="list">
+                            <span>
+                                <img src="images/html-1.svg" alt="">
+                                <p>HTML</p>
+                            </span>
+                            <span>
+                                <img src="images/css-3.svg" alt="">
+                                <p>CSS</p>
+                            </span>
+                            <span>
+                                <img src="images/javascript-1.svg" alt="">
+                                <p>Javascript</p>
+                            </span>
+                            <span>
+                                <img src="images/tailwindcss.png" alt="">
+                                <p>Tailwind</p>
+                            </span>
+                            <span>
+                                <img src="images/react-2.svg" alt="">
+                                <p>React</p>
+                            </span>
+                            <span>
+                                <img src="images/node.png" alt="">
+                                <p>Node</p>
+                            </span>
+                            <span>
+                                <img src="images/express.png" alt="">
+                                <p>Express</p>
+                            </span>
+                            <span>
+                                <img src="images/mongodb.png" alt="">
+                                <p>MongoDB</p>
+                            </span>
+                            <span>
+                                <img src="images/github-icon-1.svg" alt="">
+                                <p>Github</p>
+                            </span>
+                            <span>
+                                <img src="images/firebase.png" alt="">
+                                <p>Firebase</p>
+                            </span>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-
+    <!----------------Footer------------>
     <footer class="footer">
         <div class="footer-container container grid">
             <div class="footer-content grid">
@@ -142,9 +184,11 @@
         </div>
     </footer>
 
+
+    <!-- SCRIPT FILES  -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>
-</body>
 
+</body>
 </html>

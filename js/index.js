@@ -23,7 +23,6 @@ const bgHeader = () => {
 window.addEventListener('scroll', bgHeader);
 
 //SERVICE MODAL //
-
 const modal = document.querySelectorAll(".services-modal");
 const modalButton = document.querySelectorAll(".services-button");
 const modalClose = document.querySelectorAll(".services-modal-close");
@@ -47,8 +46,6 @@ modalClose.forEach((modalClose) => {
 })
 
 /// profile additional function ///
-
-
 //scroll bar
 
 const themeButton = document.getElementById("theme-button");
@@ -76,14 +73,9 @@ themeButton.addEventListener('click', () => {
 })
 
 
+// loading animation 
+const loading = document.getElementById("loading")
 
-//color button
-const colorBtn = document.getElementById('colors')
-const icon = document.getElementById('icon')
-icon.addEventListener('click', () => {
-    colorBtn.classList.toggle('active')
-})
-
-function color(color) {
-    document.body.style.background = color;
-}
+setTimeout(() => {
+    loading.classList.add("stop-loading")
+}, 1000)

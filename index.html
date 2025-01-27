@@ -6,13 +6,9 @@
 <title>Akash M</title>
 <link rel="icon" href="images/favicon.png">
 <!-- font awesome  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 <!-- remix icon  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
-    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
 <!-- stylesheet  -->
 <link rel="stylesheet" href="styles/style.css">
 <link rel="stylesheet" href="styles/special.css">
@@ -21,6 +17,12 @@
 
 <body>
 
+    <!-- ----Loader- -->
+    <div class="loader-container" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ------NAV---------- -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">Akash M</a>
@@ -36,8 +38,10 @@
                     <li class="nav-item">
                         <a href="work.html" class="list">Portfolio</a>
                     </li>
-                    <li class="button">
-                        <a href="contact.html" class="list">Contact Me</a>
+                    <li class="nav-item nav-btn">
+                        <a href="contact.html" class="list">
+                            <p class="nav-button">Contact Me</p>
+                        </a>
                     </li>
                 </ul>
                 <!-- close button  -->
@@ -56,6 +60,7 @@
         </nav>
     </header>
 
+    <!-- -----------HERO--------------- -->
     <main class="main">
         <section class="home section">
             <div class="home-rectangle"></div>
@@ -85,8 +90,8 @@
                             </a>
                         </div>
 
-                        <a href="images/Akash Resume.pdf" class="home-button btn" id="cv" download>Download CV <i
-                                class="ri-arrow-right-double-line"></i></a>
+                        <a href="images/Akash Resume.pdf" class="home-button btn" id="cv" download>My Resume
+                            <i class="ri-arrow-right-double-line"></i></a>
 
                     </div>
                 </div>
@@ -94,7 +99,10 @@
         </section>
     </main>
 
+
+    <!-- ---------SERVICES & OFFERS----------- -->
     <section class="services-container services section padding">
+        <div class="sss"></div>
         <h2 class="section-title">
             The services <br>
             I Provide
@@ -107,9 +115,7 @@
                     Freelancing web development offers quality, <br>
                     modern designs and responsive pages at affordable prices, ensuring client satisfaction.
                 </p>
-
                 <button class="services-button btn">Know More</button>
-
                 <div class="services-modal">
                     <div class="services-modal-content">
                         <i class="ri-close-line services-modal-close"></i>
@@ -191,6 +197,7 @@
         </div>
     </section>
 
+    <!-- --------NOTES & PDF-------- -->
     <h3 class="link-title">Project Link</h3>
     <section class="work section link-page padding">
 
@@ -204,26 +211,26 @@
                     <img src="images/link1.png" alt="img">
                     <p>Portfolio Page</p>
                 </div>
-                <a href="images/PORTFOLIO PAGE.pdf" class="home-button btn slide" download>Download <i
-                        class="ri-arrow-right-double-fill"></i> </a>
+                <a href="images/PORTFOLIO PAGE.pdf" class="home-button btn slide" download>Download
+                    <i class="ri-arrow-right-double-fill"></i> </a>
             </div>
 
             <div class="box">
                 <div class="top">
-                    <img src="images/likn2.png" alt="img">
-                    <p>Profile page</p>
+                    <img src="images/link2.png" alt="img">
+                    <p>Profile Page</p>
                 </div>
-                <a href="images/PROFILE UI.pdf" class="home-button btn slide" download>Download <i
-                        class="ri-arrow-right-double-fill"></i> </a>
+                <a href="images/PROFILE UI.pdf" class="home-button btn slide" download>Download
+                    <i class="ri-arrow-right-double-fill"></i> </a>
             </div>
 
             <div class="box">
                 <div class="top">
                     <img src="images/link3.png" alt="img">
-                    <p>Web design pdf</p>
+                    <p>Web Design pdf</p>
                 </div>
-                <a href="images/WEB DESIGN PATTERN.pdf" class="home-button btn slide" download>Download <i
-                        class="ri-arrow-right-double-fill"></i> </a>
+                <a href="images/WEB DESIGN PATTERN.pdf" class="home-button btn slide" download>Download
+                    <i class="ri-arrow-right-double-fill"></i> </a>
             </div>
         </div>
 
@@ -231,7 +238,7 @@
 
 
 
-
+    <!-- ----------WORK------------- -->
     <section class="work section work-page padding">
         <h2 class="section-title">
             MY Most <br>
@@ -242,13 +249,24 @@
 
             <article class="work-card">
                 <a href="" class="work-link">
+                    <img src="images/job-site.jpg" class="work-img" loading="lazy">
+                    <i class="ri-arrow-right-circle-line work-icon"></i>
+                </a>
+                <h2 class="work-title">Job Portal</h2>
+                <span class="work-subtitle">Mern Stack</span>
+                <a href="https://find-jobs-web.vercel.app/" class="link" target="_blank">Visit site
+                    <i class="ri-arrow-right-line"></i> </a>
+            </article>
+
+            <article class="work-card">
+                <a href="" class="work-link">
                     <img src="images/burger1.png" class="work-img" loading="lazy">
                     <i class="ri-arrow-right-circle-line work-icon"></i>
                 </a>
                 <h2 class="work-title">Burger Shop</h2>
                 <span class="work-subtitle">Web Development</span>
-                <a href="https://akash7807.github.io/burger/" class="link" target="_blank">Visit site <i
-                        class="ri-arrow-right-line"></i> </a>
+                <a href="https://akash7807.github.io/burger/" class="link" target="_blank">Visit site
+                    <i class="ri-arrow-right-line"></i> </a>
             </article>
 
             <article class="work-card">
@@ -389,24 +407,12 @@
 
             <article class="work-card">
                 <a href="" class="work-link">
-                    <img src="images/work1.png" class="work-img" loading="lazy">
-                    <i class="ri-arrow-right-circle-line work-icon"></i>
-                </a>
-                <h2 class="work-title">E-sevai WebSite</h2>
-                <span class="work-subtitle">Web Design</span>
-                <a href="http://akash7807.github.io/Esevai" class="link" target="_blank">Visit site <i
-                        class="ri-arrow-right-line"></i> </a>
-            </article>
-
-
-            <article class="work-card">
-                <a href="" class="work-link">
                     <img src="images/work3.png" class="work-img" loading="lazy">
                     <i class="ri-arrow-right-circle-line work-icon"></i>
                 </a>
                 <h2 class="work-title">Register Form</h2>
                 <span class="work-subtitle">Web Design</span>
-                <a href="http://akash7807.github.io/JAVASCRIPTCRUD" class="link" target="_blank">Visit site <i
+                <a href="http://akash7807.github.io/Javascript-crud" class="link" target="_blank">Visit site <i
                         class="ri-arrow-right-line"></i> </a>
             </article>
 
@@ -429,14 +435,78 @@
                 </a>
                 <h2 class="work-title">Calculator</h2>
                 <span class="work-subtitle">Web Design</span>
-                <a href="http://akash7807.github.io/Calculator" class="link" target="_blank">Visit site <i
+                <a href="https://akash7807.github.io/Calculator/calculator" class="link" target="_blank">Visit site <i
                         class="ri-arrow-right-line"></i> </a>
             </article>
+
+            <article class="work-card">
+                <a href="" class="work-link">
+                    <img src="images/portfolio.png" class="work-img" loading="lazy">
+                    <i class="ri-arrow-right-circle-line work-icon"></i>
+                </a>
+                <h2 class="work-title">Portfolio</h2>
+                <span class="work-subtitle">Web Design</span>
+                <a href="https://akash-7807.web.app/" class="link" target="_blank">Visit site
+                    <i class="ri-arrow-right-line"></i> </a>
+            </article>
+
         </div>
     </section>
 
-    <!-- ===================================================================== -->
+    <!----------Skills-------------------->
+    <section class="skills">
+        <h2 class="section-title">
+            <span>Skills</span> &<br>
+            Technology
+        </h2>
 
+        <div class="skills-container container">
+            <div class="list">
+                <span>
+                    <img src="images/html-1.svg" alt="">
+                    <p>HTML</p>
+                </span>
+                <span>
+                    <img src="images/css-3.svg" alt="">
+                    <p>CSS</p>
+                </span>
+                <span>
+                    <img src="images/javascript-1.svg" alt="">
+                    <p>Javascript</p>
+                </span>
+                <span>
+                    <img src="images/tailwindcss.png" alt="">
+                    <p>Tailwind</p>
+                </span>
+                <span>
+                    <img src="images/react-2.svg" alt="">
+                    <p>React</p>
+                </span>
+                <span>
+                    <img src="images/node.png" alt="">
+                    <p>Node</p>
+                </span>
+                <span>
+                    <img src="images/express.png" alt="">
+                    <p>Express</p>
+                </span>
+                <span>
+                    <img src="images/mongodb.png" alt="">
+                    <p>MongoDB</p>
+                </span>
+                <span>
+                    <img src="images/github-icon-1.svg" alt="">
+                    <p>Github</p>
+                </span>
+                <span>
+                    <img src="images/firebase.png" alt="">
+                    <p>Firebase</p>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!----------------Testimonial----------------------->
     <section class="testimonial section padding">
         <h2 class="section-title">
             what They Say <br>
@@ -483,12 +553,10 @@
                     </article>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- CONTACT  -->
-
+    <!----------------CONTACT---------------->
     <section class="contact section padding">
         <div class="contact-container container grid">
             <h2 class="section-title">
@@ -496,7 +564,8 @@
                 About Your Project
             </h2>
 
-            <a href="contact.html" class="contact-button btn">Contact Me <i class="ri-chat-3-line"></i> </a>
+            <a href="contact.html" class="contact-btn">
+                <button class="btn-contact">Contact Me <i class="ri-chat-3-line"></i></button></a>
         </div>
     </section>
 
@@ -516,7 +585,7 @@
                     </li>
 
                     <li>
-                        <a href="contact.html" class="footer-link">Contact Me</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
                     </li>
                 </ul>
 
@@ -549,11 +618,10 @@
         </a>
     </footer>
 
-
-
+    <!-- SCRIPT FILES  -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>
-</body>
 
+</body>
 </html>
