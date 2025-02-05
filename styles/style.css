@@ -15,7 +15,6 @@
     --body-color: hsl(0, 0%, 100%);
     --container-color: hsl(0, 0%, 100%);
     --shadow-color: hsla(var(--hue), 90%, 30%, .1);
-
     /* ==================font ======================== */
 
     --body-font: "syne", sans-serif;
@@ -1085,6 +1084,7 @@ header::-webkit-scrollbar {
 
     .services-grid {
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(3, 1fr);
     }
 
