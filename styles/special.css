@@ -482,3 +482,73 @@ section::-webkit-scrollbar,
         grid-template-columns: repeat(5, 1fr);
     }
 }
+<<<<<<< HEAD
+=======
+
+
+/*==================UPDATE 2================= */
+/* RESPOSNSIVE */
+@media screen and (min-width:500px) {
+
+    .main,
+    .header,
+    .nav {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-content: space-between;
+        width: 150%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    nav.nav.container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .services-container {
+        display: grid;
+        align-items: center;
+        justify-content: center !important;
+    }
+
+    .work-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .work {
+        margin: 10px 0;
+    }
+
+    .testimonial,
+    .contact,
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .link-page {
+        display: flex;
+        justify-content:space-evenly;
+        margin-bottom: 10px;
+        height: 550px;
+    }
+}
+>>>>>>> f9f3c964702f97cfc1fdcd1f4996e70ab0577090
