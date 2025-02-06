@@ -192,6 +192,8 @@ section::-webkit-scrollbar,
     }
 
     .services-grid {
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -204,7 +206,6 @@ section::-webkit-scrollbar,
 
     .work-card {
         margin-bottom: 20px;
-        margin-left: 10px;
     }
 
     .testimonial,
