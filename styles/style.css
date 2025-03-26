@@ -1175,11 +1175,7 @@ header::-webkit-scrollbar {
     }
 }
 
-<<<<<<< HEAD
-@media screen and (min-width:550px) {
-=======
 @media screen and (min-width:900px) {
->>>>>>> 7c351a3766d9523bfea8765867360382dc7f9627
     nav.nav.container {
         align-items: center;
         justify-content: space-between;
