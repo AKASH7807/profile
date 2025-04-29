@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Playwrite+US+Modern&display=swap');
 
+@font-face {
+    font-family: "role";
+    src: url(./font/role.ttf);
+}
+
+@font-face {
+    font-family: "title";
+    src: url(./font/False.ttf);
+}
+
 :root {
     --header-height: 3.5rem;
     --hue: 255;
@@ -27,7 +37,7 @@
     --smaller-font-size: 0.75rem
         /* ================font weight======================= */
 
-        --font-regular:400;
+        --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
 
@@ -58,6 +68,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+/* title font  */
+.home-profession,
+.about-profession {
+    font-family: "role" !important;
+}
+
+
+.home-name,
+.about-name {
+    font-family: "title" !important;
+    font-weight: 100 !important;
+}
+
+.footer-logo {
+    font-family: "title" !important;
+    font-weight: 100 !important;
+    font-size: 30px !important;
+}
+
+.section-title {
+    font-family: "title";
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.header-color {
+    color: #000;
 }
 
 html {
@@ -692,59 +732,85 @@ header {
 }
 
 
-/* ============ TESTIMONIAL ================ */
-.testimonial-container {
-    position: relative;
-    overflow: visible;
+/* ===============TESTIMONIAL================ */
+.testimonial_container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 80px 0 20px 0;
 }
 
-.testimonial-swiper {
-    padding-bottom: 2rem;
-    overflow: visible;
+.testimonial_header {
+    text-align: center;
 }
 
-.swiper-wrapper {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    overflow: visible;
+.testimonial_header h1 {
+    font-size: 2.5rem;
 }
 
-.nav-actions .i {
-    color: #333 !important;
+.testimonial_header p {
+    color: rgba(107, 114, 128, 0.9);
+    margin-top: 0.5rem;
+    max-width: 696px;
+    margin: 0 auto;
 }
 
-.testimonial-border {
-    width: 100px;
-    height: 100px;
-    border: 6px solid var(--first-color);
-    overflow: hidden;
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-image {
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    margin: 0 auto 1rem;
-
-}
-
-.testimonial-card {
-    border-radius: 10px;
-    background-color: var(--container-color);
-    box-shadow: 5px 16px 24px var(--shadow-color),
-        -5px -8px 12px #38373716;
-    padding: 20px 20px;
-    margin: 10px 10px;
-}
-
-.testimonial-img {
-    filter: grayscale(1);
-    transition: filter 0.4s;
+    margin-right: 1rem;
 }
 
 .testimonial-name {
-    font-size: var(--h2-font-size);
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
 }
 
-.testimonial-card:hover .testimonial-img {
-    filter: none;
+.testimonial-address {
+    color: #6b7280;
 }
+
+.testimonial-rating {
+    display: flex;
+    margin-top: 0.75rem;
+}
+
+.star {
+    color: #FBBF24;
+    font-size: 1rem;
+}
+
+.star:not(.filled) {
+    color: #D1D5DB;
+}
+
+.testimonial-review {
+    color: #6b7280;
+    margin-top: 1rem;
+}
+
 
 
 /* ============CONTACT================ */
@@ -957,7 +1023,6 @@ body.dark-theme {
 header::-webkit-scrollbar {
     display: none;
 }
-
 
 
 /* ========= RESPONSIVE DESIGN ============== */
@@ -1219,7 +1284,7 @@ header::-webkit-scrollbar {
 @media screen and (min-width:1800px) {
     .link-page {
         display: flex;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         margin-bottom: 10px;
         height: 550px;
     }

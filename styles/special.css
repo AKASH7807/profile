@@ -482,11 +482,6 @@ section::-webkit-scrollbar,
         grid-template-columns: repeat(5, 1fr);
     }
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-
 
 /*==================UPDATE 2================= */
 /* RESPOSNSIVE */
@@ -548,10 +543,8 @@ section::-webkit-scrollbar,
 @media screen and (min-width:1800px) {
     .link-page {
         display: flex;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         margin-bottom: 10px;
         height: 550px;
     }
 }
->>>>>>> f9f3c964702f97cfc1fdcd1f4996e70ab0577090
->>>>>>> 7c351a3766d9523bfea8765867360382dc7f9627

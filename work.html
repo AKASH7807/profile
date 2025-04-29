@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Portfolio</title>
+    <title>Akash M</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
@@ -14,36 +14,38 @@
 
 <body>
 
-    <!---------Header------>
-    <header class="header pages" id="header">
+    <!-- ==================NAV==================== -->
+    <header class="header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav-logo">Akash</a>
+            <a href="index.html" class="nav-logo">Akash M</a>
 
             <div class="nav-menu " id="nav-menu">
                 <ul class="nav-list" id="navigation">
-                    <li class="nav-item nav-dark">
+                    <li class="nav-item">
                         <a href="index.html" class="list">Home</a>
                     </li>
-                    <li class="nav-item nav-dark">
+                    <li class="nav-item">
                         <a href="about.html" class="list">About Me</a>
                     </li>
-                    <li class="nav-item nav-dark">
+                    <li class="nav-item">
                         <a href="work.html" class="list">Portfolio</a>
                     </li>
-                    <li class="button">
-                        <a href="contact.html" class="list">Contact Me</a>
+                    <li class="nav-item nav-btn">
+                        <a href="contact.html" class="list">
+                            <p class="nav-button">Contact Me</p>
+                        </a>
                     </li>
                 </ul>
                 <!-- close button  -->
                 <div class="nav-close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                    <i class="ri-close-line" id="close"></i>
                 </div>
             </div>
 
             <div class="nav-actions">
-                <i class="ri-moon-line change-theme i" id="theme-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
                 <div class="nav-toggle" id="nav-toggle">
-                    <i class="ri-menu-5-line"></i>
+                    <i class="ri-menu-5-line" id="white"></i>
                 </div>
             </div>
 
@@ -51,7 +53,7 @@
     </header>
 
 
-    <!---------Profile Summary--------->
+    <!-- ==========================PROFILE SUMMARY=================== -->
     <section class="section " id="profile-cart">
         <div class="container profile-card">
             <div class="profile" id="profile">
@@ -72,17 +74,17 @@
                 <div class="social-media">
                     <div>
                         <img src="images/instagram.png">
-                        <h3>20.4k</h3>
+                        <h3>2.8k</h3>
                         <p>Followers</p>
                     </div>
                     <div>
                         <img src="images/whatsapp.png">
-                        <h3>10.2k</h3>
+                        <h3>1.2k</h3>
                         <p>Followers</p>
                     </div>
                     <div>
                         <img src="images/facebook.png">
-                        <h3>17.7k</h3>
+                        <h3>1.7k</h3>
                         <p>Followers</p>
                     </div>
                 </div>
@@ -96,11 +98,21 @@
     <!-- ============================ WORK PORJECTS ============================= -->
     <section class="work section work-page">
         <h2 class="section-title">
-            MY Most <br>
             Recent Works
         </h2>
 
         <div class="work-container container grid">
+
+            <article class="work-card">
+                <a href="" class="work-link">
+                    <img src="images/freshcart.png" class="work-img" loading="lazy">
+                    <i class="ri-arrow-right-circle-line work-icon"></i>
+                </a>
+                <h2 class="work-title">Grocery Store</h2>
+                <span class="work-subtitle">Mern Stack</span>
+                <a href="https://freshcart-web.vercel.app/" class="link" target="_blank">Visit site
+                    <i class="ri-arrow-right-line"></i> </a>
+            </article>
 
             <article class="work-card">
                 <a href="" class="work-link">
@@ -319,11 +331,12 @@
         </div>
     </section>
 
-    <!-----------Footer----------->
+
+    <!-- =============FOOTER=============== -->
     <footer class="footer">
         <div class="footer-container container grid">
             <div class="footer-content grid">
-                <a href="index.html" class="footer-logo">Akash</a>
+                <a href="index.html" class="footer-logo">Akash M</a>
 
                 <ul class="footer-links">
                     <li>
@@ -378,4 +391,5 @@
     <script src="js/animation.js"></script>
 
 </body>
+
 </html>

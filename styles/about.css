@@ -1,8 +1,16 @@
-/* contact button  */
+/* CONTACT BUTTON  */
 .about-button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.about-name {
+    font-size: 28px;
+}
+
+.nav-item a {
+    color: #000;
 }
 
 button {
