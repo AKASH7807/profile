@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "disney";
+    src: url(font/waltograph42.otf);
+}
+
+@font-face {
+    font-family: "normal";
+    src: url(font/sofia.otf);
+}
+
+@font-face {
+    font-family: "font";
+    src: url(font/Geizer.otf);
+}
+
+#profile-cart {
+    justify-content: center;
+    display: flex;
+
+}
+
+.profile {
+    width: 80%;
+    max-width: 320px;
+    background: #32384f;
+    text-align: center;
+    padding: 20px 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #fff;
+    user-select: none;
+}
+
+.active {
+    background: #fff;
+    color: #32384f;
+}
+
+.top-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+i:hover {
+    cursor: pointer;
+    color: #e4e;
+}
+
+.fa-heart {
+    margin-left: 10px;
+}
+
+#change {
+    margin: 0 10px;
+    color: #ff7200;
+}
+
+.user-img {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+#p-card {
+    justify-content: center;
+    display: flex;
+}
+
+.profile h2 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: "normal";
+}
+
+.profile p {
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: "normal";
+}
+
+.profile-card {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 40px;
+    background: linear-gradient(to right, #8d68c5, #e34494);
+    display: inline-block;
+    margin: 25px 0;
+    font-size: 15px;
+    font-family: "font";
+    letter-spacing: 2px;
+    transition: 1s;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.social-media h3 {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "disney";
+}
+
+.social-media p {
+    font-family: "disney";
+    font-size: 16px;
+}
+
+.social-media div {
+    margin: 10px 0 30px;
+}
