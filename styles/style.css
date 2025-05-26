@@ -411,6 +411,7 @@ header {
 }
 
 /*========NAV BUTTON ANIMATION======== */
+
 .bg-header .button {
     background: transparent !important;
     color: #fff;
@@ -733,6 +734,7 @@ header {
 
 
 /* ===============TESTIMONIAL================ */
+
 .testimonial_container {
     /* max-width: 1200px; */
     margin: 0 auto;
@@ -814,6 +816,7 @@ header {
 
 
 /* ============CONTACT================ */
+
 .contact-container {
     padding-bottom: 4rem;
 }
@@ -898,6 +901,10 @@ header {
     color: var(--title-color);
 }
 
+.contact-send:hover {
+    transition: 1s ease;
+    background: #361FDF;
+}
 
 /* =============FOOTER=============== */
 .footer {
@@ -1135,7 +1142,7 @@ header::-webkit-scrollbar {
 
 }
 
-/* LARGE SCREEN LAYOUT  */
+/* =============== LARGE SCREEN LAYOUT =====================  */
 @media screen and (min-width:900px) {
     .work-container {
         display: grid;
@@ -1166,7 +1173,7 @@ header::-webkit-scrollbar {
     }
 }
 
-/* ===Footer & ScrollBar===== */
+/* ======= Footer and ScrollBar ========= */
 @media(width < 768px) {
     .footer {
         height: 450px !important;
@@ -1180,7 +1187,7 @@ header::-webkit-scrollbar {
 
 @media (min-width:300px) {
 
-    /* =========BUTTON ANIMATION &  LAYOUT================ */
+    /* ======== BUTTON ANIMATION &  LAYOUT ======== */
     .nav-btn .list {
         display: flex;
         align-items: center;
@@ -1223,8 +1230,8 @@ header::-webkit-scrollbar {
     }
 }
 
-/*==================UPDATE 2================= */
-/* RESPOSNSIVE */
+
+/* ===== RESPOSNSIVE ======= */
 @media screen and (min-width:500px) {
 
     .main,

@@ -129,6 +129,68 @@ button:hover .arrow:before {
     -webkit-text-fill-color: transparent;
 }
 
+/* About Me grid info  */
+.about__grid {
+    text-align: justify;
+    padding: 0 25px;
+}
+
+/* Social Link Section  */
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+.social-button {
+    width: 250px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.list a img {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s ease;
+}
+
+.list a img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.5s ease;
+}
+
+
+/* Social Link Section End */
+
+
 @media screen and (min-width:300px) {
     .skills-container .list {
         grid-template-columns: repeat(2, 1fr);
@@ -153,6 +215,11 @@ button:hover .arrow:before {
     .skills-container .list {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .about__grid {
+        text-align: justify;
+        padding: 0 85px;
+    }
 }
 
 @media screen and (min-width:800px) {
@@ -175,4 +242,24 @@ button:hover .arrow:before {
         grid-template-columns: repeat(6, 1fr);
         margin-bottom: 15px;
     }
+}
+
+@media screen and (width<768px) {
+    .social-button {
+        width: 250px;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .list a img {
+        width: 25px;
+        height: 25px;
+        transition: 0.5s ease;
+    }
+
+
 }
