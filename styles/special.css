@@ -44,28 +44,32 @@
     margin-right: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 50px;
 
 }
 
 .link-page .right .box {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .right .box .top {
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 60px;
     flex-direction: row;
     overflow: hidden;
-    gap: 10px;
+    gap: 5px;
 }
 
 .right .box .top img {
     width: 100px;
+    height: 70px;
+    object-fit: contain;
 }
+
+
 
 .right .box a {
     overflow: hidden;
@@ -75,18 +79,47 @@
     display: flex;
 }
 
-.right .box a i {
-    padding-left: 8px;
+.right .box a span {
+    padding-right: 5px;
+
 }
 
-@media(max-width:678px) {
+.right .box a i {
+    padding-left: 5px;
+}
+
+
+/* Links Responsive  */
+
+@media screen and (max-width:376px) {
+    .right .box a {
+        width: 130px;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width:678px) {
     .link-page .left img {
         height: 300px;
-        margin-top: 110px;
+        margin-top: 80px;
+    }
+
+    .right .box a span {
+        display: none;
     }
 
 }
 
+@media screen and (max-width:425px) {
+    .link-page .right .box .top img {
+        width: 60px;
+    }
+
+    .link-page .right .box .top {
+        font-size: 16px;
+    }
+
+}
 
 /*================ANIMATION===============*/
 @keyframes fade {
