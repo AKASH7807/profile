@@ -1,21 +1,34 @@
 const contactForm = document.getElementById('contact-form');
-const contactmessage = document.getElementById('contact-message');
+const contactMessage = document.getElementById('contact-message');
 
 const sendEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+
 
     emailjs.sendForm('service_ti3z33b', 'template_8ricj7d', '#contact-form', '0vQKtOhSgnu9weJxu')
         .then(() => {
-            contactmessage.textContent = 'message sent successfully'
+            // Success message
+            contactMessage.textContent = '✅ Message sent successfully!';
+            contactMessage.className = 'contact-message show success';
 
             setTimeout(() => {
-                contactmessage.textContent = ''
-            }, 5000)
+                contactMessage.className = 'contact-message';
+                contactMessage.textContent = '';
+            }, 5000);
 
-            contactForm.reset()
-        }, () => {
-            contactmessage.textContent = 'message not sent (service error)'
-        })
-}
+            contactForm.reset();
+        },
+            () => {
+                // Error message
+                contactMessage.textContent = '❌ Message not sent (service error)';
+                contactMessage.className = 'contact-message show error';
 
-contactForm.addEventListener('submit', sendEmail)
+                setTimeout(() => {
+                    contactMessage.className = 'contact-message';
+                    contactMessage.textContent = '';
+                }, 5000);
+            }
+        );
+};
+
+contactForm.addEventListener('submit', sendEmail);

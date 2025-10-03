@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akash M</title>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-    <!-- ------NAV---------->
+    <!-- ==================NAV==================== -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">Akash M</a>
@@ -21,16 +23,16 @@
             <div class="nav-menu " id="nav-menu">
                 <ul class="nav-list" id="navigation">
                     <li class="nav-item">
-                        <a href="index.html" class="list">Home</a>
+                        <a href="index.html" class="text">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="list">About Me</a>
+                        <a href="about.html" class="text">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a href="work.html" class="list">Portfolio</a>
+                        <a href="work.html" class="text">Portfolio</a>
                     </li>
                     <li class="nav-item nav-btn">
-                        <a href="contact.html" class="list">
+                        <a href="contact.html" class="list text">
                             <p class="nav-button">Contact Me</p>
                         </a>
                     </li>
@@ -47,41 +49,40 @@
                     <i class="ri-menu-5-line" id="white"></i>
                 </div>
             </div>
-
         </nav>
     </header>
 
-
-    <!-------Proflie Card------>
+    <!-------Profile Card------->
     <main class="main">
         <section class="about section">
             <h2 class="section-title">
-                my Personal <br>
+                my Personal <br />
                 Information
             </h2>
             <div class="about-container about-page grid">
-                <div class="about-profile ">
+                <div class="about-profile">
                     <div class="profile-container">
-                        <img src="images/img.png" alt="">
+                        <img src="images/profile.png" alt="" />
                     </div>
                 </div>
             </div>
             <div class="about-content grid grid-card">
                 <div class="about-data grid">
                     <div class="about-info grid">
-                        <h1 class="about-name">Akash M</h1>
-                        <h2 class="about-profession">Web Designer & Developer</h2>
+                        <h1 class="home-name">Akash M</h1>
+                        <h2 class="home-profession">Web Designer &<span> Developer</span></h2>
                         <p class="about-description about__grid">
-                            I am Akash M, a <b>Full Stack Web Developer</b> with strong expertise in <b>React and
-                                JavaScript</b>.
-                            I have successfully completed over <b>20 projects</b>, including a job portal, chat
-                            application, and
-                            finance tracker. I specialize in responsive design, modern layouts, and efficient component
-                            structures, delivering scalable and user-friendly web solutions.
+                            I am Akash M, a <b>Full Stack Web Developer</b> with strong
+                            expertise in <b>React and JavaScript</b>. I have successfully
+                            completed over <b>20 projects</b>, including a job portal, chat
+                            application, and finance tracker. I specialize in responsive
+                            design, modern layouts, and efficient component structures,
+                            delivering scalable and user-friendly web solutions.
                         </p>
                     </div>
-                    <a href="contact.html" class="about-button ">
-                        <button> Contact Me
+                    <a href="contact.html" class="about-button">
+                        <button>
+                            Contact Me
                             <div class="arrow-wrapper">
                                 <div class="arrow"></div>
                             </div>
@@ -89,54 +90,173 @@
                     </a>
                 </div>
 
+                <!--NEW BENTO GRID START -->
+                <section class="bento-section">
+                    <h1 class="bento-title">Akash Portfolio</h1>
+                    <div class="bento-grid">
+                        <!-- Name/Role -->
+                        <div class="bento-box purple" style="grid-column: span 2">
+                            <h2>Akash M</h2>
+                            <p>Full Stack Developer</p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div class="bento-box white">
+                            <i class="fa-solid fa-phone" style="color: #7c3aed"></i>
+                            <p>+91 93443 65416</p>
+                            <p style="color: #2563eb">itzmeaktech@gmail.com</p>
+                        </div>
+
+                        <!-- Profile Image -->
+                        <div class="bento-box pink" style="grid-row: span 2">
+                            <img src="images/mobile_mockup.png" alt="Profile" />
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="bento-box indigo">
+                            <i class="fa-solid fa-code"></i>
+                            <p>React, Node.js, Tailwind</p>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="bento-box teal">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <p>B.C.A </p>
+                            <small>Islamiah College</small>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="bento-box rose" style="grid-row: span 2">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <p>2+ Years Experience</p>
+                            <small>Full Stack Projects</small>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="bento-box orange" style="grid-column: span 2">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <p>30+ Projects</p>
+                            <small>Web, Mobile, API Development</small>
+                        </div>
+
+                        <!-- Social -->
+                        <div class="bento-box cyan bento-social">
+                            <a href="https://github.com/AKASH7807" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/akash7807/" target="_blank"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://akash-7807.web.app" target="_blank"><i
+                                    class="fa-solid fa-laptop-code"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!--  NEW BENTO GRID END -->
+
+
+                <!-- TIMELINE DETAILS -->
+                <section class="timeline-section">
+                    <h2 class="timeline-title">My Journey Timeline</h2>
+
+                    <ol class="timeline">
+                        <li>
+                            <div class="dot blue"></div>
+                            <time>January 2022</time>
+                            <h3>Logo Designer</h3>
+                            <p>Designed <span>Cartoon, Anime, and Gaming logos</span> using Canva, Pixellab, and Pixart.
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="dot green"></div>
+                            <time>December 2022</time>
+                            <h3>Web Developer</h3>
+                            <p>Built websites using <span>HTML, CSS, and JavaScript</span>.</p>
+                        </li>
+
+                        <li>
+                            <div class="dot purple"></div>
+                            <time>January 2023</time>
+                            <h3>Blogger</h3>
+                            <p>Wrote blogs on <span>Technology, Finance, Coding, IT Jobs</span>, and skill development.
+                            </p>
+                        </li>
+
+                        <li>
+                            <div class="dot pink"></div>
+                            <time>March 2023</time>
+                            <h3>3D Animation</h3>
+                            <p>Created <span>character, gaming, and intro animations</span> with Blender & Mixamo.
+                                Worked on car intro and rendering projects.</p>
+                        </li>
+
+                        <li>
+                            <div class="dot yellow"></div>
+                            <time>July 2024</time>
+                            <h3>Video Editing</h3>
+                            <p>Edited <span>celebrations, anime, brand intros, lyric videos</span> using Premiere Pro,
+                                After Effects, Capcut, Kinemaster, and Alight Motion.</p>
+                        </li>
+
+                        <li>
+                            <div class="dot red"></div>
+                            <time>December 2024</time>
+                            <h3>MERN Stack Developer</h3>
+                            <p>Built <span>10+ full-stack projects</span> and <span>20+ front-end applications</span>
+                                with MongoDB, Express, React, and Node.js.</p>
+                        </li>
+
+                    </ol>
+                </section>
+
+
                 <!-----------Skills List------->
                 <div class="about-skills">
-                    <h3 class="about-skills-title">My Skills Are</h3>
+                    <h3 class="about-skills-title section-title">
+                        <span>Skills</span> & Technology
+                    </h3>
                     <div class="skills-container container">
                         <div class="list">
                             <span>
-                                <img src="images/html-1.svg" alt="">
+                                <img src="images/html-1.svg" alt="" />
                                 <p>HTML</p>
                             </span>
                             <span>
-                                <img src="images/css-3.svg" alt="">
+                                <img src="images/css-3.svg" alt="" />
                                 <p>CSS</p>
                             </span>
                             <span>
-                                <img src="images/javascript-1.svg" alt="">
+                                <img src="images/javascript-1.svg" alt="" />
                                 <p>Javascript</p>
                             </span>
                             <span>
-                                <img src="images/tailwindcss.png" alt="">
+                                <img src="images/tailwindcss.png" alt="" />
                                 <p>Tailwind</p>
                             </span>
                             <span>
-                                <img src="images/react-2.svg" alt="">
+                                <img src="images/react-2.svg" alt="" />
                                 <p>React</p>
                             </span>
                             <span>
-                                <img src="images/node.png" alt="">
+                                <img src="images/node.png" alt="" />
                                 <p>Node</p>
                             </span>
                             <span>
-                                <img src="images/express.png" alt="">
+                                <img src="images/express.png" alt="" />
                                 <p>Express</p>
                             </span>
                             <span>
-                                <img src="images/mongodb.png" alt="">
+                                <img src="images/mongodb.png" alt="" />
                                 <p>MongoDB</p>
                             </span>
                             <span>
-                                <img src="images/github-icon-1.svg" alt="">
+                                <img src="images/github-icon-1.svg" alt="" />
                                 <p>Github</p>
                             </span>
                             <span>
-                                <img src="images/firebase.png" alt="">
+                                <img src="images/firebase.png" alt="" />
                                 <p>Firebase</p>
                             </span>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Social Link  -->
@@ -144,22 +264,21 @@
                     <div class="social-button">
                         <ul class="list">
                             <a href="https://github.com/AKASH7807" target="_blank">
-                                <img src="images/link/github.png" alt="">
+                                <img src="images/link/github.png" alt="" />
                             </a>
                             <a href="https://www.linkedin.com/in/akash7807/" target="_blank">
-                                <img src="images/link/linkedin.png" alt="">
+                                <img src="images/link/linkedin.png" alt="" />
                             </a>
                             <a href="https://leetcode.com/u/akash7807/" target="_blank">
-                                <img src="images/link/leetcode.png" alt="">
+                                <img src="images/link/leetcode.png" alt="" />
                             </a>
                             <a href="https://dribbble.com/Akash7807" target="_blank">
-                                <img src="images/link/dribbble.png" alt="">
+                                <img src="images/link/dribbble.png" alt="" />
                             </a>
                         </ul>
                     </div>
                 </div>
                 <!-- social link end  -->
-
             </div>
         </section>
     </main>
@@ -186,7 +305,6 @@
                 </ul>
 
                 <div class="footer-social">
-
                     <a href="https://leetcode.com/u/akash7807/" target="_blank" class="footer-social-link">
                         <i class="ri-code-s-slash-line"></i>
                     </a>
@@ -216,12 +334,10 @@
         </div>
     </footer>
 
-
-    <!-- SCRIPT FILES  -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>
-
 </body>
 
 </html>
