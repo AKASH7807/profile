@@ -10,47 +10,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/special.css">
 </head>
 
 <body>
+
+    <!-- ==========================================================================
+         CINEMATIC PRE-LOADER (Uiverse / Creative Agency Style)
+         ========================================================================== -->
+    <div class="loader-container" id="loading">
+        <div class="loader-backdrop">
+            <div class="loader-glow-orb orb-1"></div>
+            <div class="loader-glow-orb orb-2"></div>
+            <div class="loader-grid-lines"></div>
+        </div>
+        <div class="loader-content">
+            <div class="loader-card">
+                <!-- Spacious Holographic Orbital Spinner -->
+                <div class="loader-spinner-wrapper">
+                    <div class="loader-orbital-ring ring-outer"></div>
+                    <div class="loader-orbital-ring ring-mid"></div>
+                    <div class="loader-orbital-ring ring-inner"></div>
+                    <div class="loader-core-badge">
+                        <span class="loader-monogram">AM</span>
+                    </div>
+                </div>
+                <!-- Neumorphic Branding & Typography -->
+                <div class="loader-brand">
+                    <h2 class="loader-brand-title">Akash M</h2>
+                    <div class="loader-brand-subtitle">
+                        <span class="loader-typing-text">PORTFOLIO EXPERIENCE</span>
+                    </div>
+                </div>
+                <!-- Neumorphic Inset Progress Track -->
+                <div class="loader-progress-box">
+                    <div class="loader-progress-track">
+                        <div class="loader-progress-bar" id="loader-progress-bar">
+                            <span class="loader-progress-shimmer"></span>
+                        </div>
+                    </div>
+                    <div class="loader-progress-meta">
+                        <span class="loader-status" id="loader-status">INITIALIZING...</span>
+                        <span class="loader-percentage" id="loader-percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cinematic Reveal Curtains -->
+        <div class="loader-curtain loader-curtain-top"></div>
+        <div class="loader-curtain loader-curtain-bottom"></div>
+    </div>
 
     <!-- ==================NAV==================== -->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.html" class="nav-logo">Akash M</a>
 
-            <div class="nav-menu " id="nav-menu">
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-menu-header">
+                    <span class="nav-menu-logo">Akash M</span>
+                    <div class="nav-close" id="nav-close" aria-label="Close menu">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
                 <ul class="nav-list" id="navigation">
                     <li class="nav-item">
-                        <a href="index.html" class="list">Home</a>
+                        <a href="index.html" class="list">
+                            <i class="ri-home-4-line nav-icon"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="list">About Me</a>
+                        <a href="about.html" class="list">
+                            <i class="ri-user-3-line nav-icon"></i>
+                            <span>About Me</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="work.html" class="list">Portfolio</a>
+                        <a href="work.html" class="list">
+                            <i class="ri-briefcase-3-line nav-icon"></i>
+                            <span>Portfolio</span>
+                        </a>
                     </li>
                     <li class="nav-item nav-btn">
                         <a href="contact.html" class="list">
-                            <p class="nav-button">Contact Me</p>
+                            <p class="nav-button">
+                                <i class="ri-mail-send-line"></i> Contact Me
+                            </p>
                         </a>
                     </li>
                 </ul>
-                <!-- close button  -->
-                <div class="nav-close" id="nav-close">
-                    <i class="ri-close-line" id="close"></i>
+
+                <div class="nav-menu-footer">
+                    <div class="nav-social-links">
+                        <a href="https://github.com/akash7807" target="_blank" class="nav-social-item" aria-label="GitHub">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/akash7807/" target="_blank" class="nav-social-item" aria-label="LinkedIn">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="https://dribbble.com/Akash7807" target="_blank" class="nav-social-item" aria-label="Dribbble">
+                            <i class="ri-dribbble-line"></i>
+                        </a>
+                    </div>
+                    <span class="nav-status-tag">Available for Projects</span>
                 </div>
             </div>
 
             <div class="nav-actions">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="ri-menu-5-line" id="white"></i>
+                <i class="ri-moon-line change-theme" id="theme-button" aria-label="Toggle theme"></i>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-4-line"></i>
                 </div>
             </div>
 
         </nav>
     </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
 
 
     <!-- ==========================PROFILE SUMMARY=================== -->
@@ -70,7 +147,7 @@
 
                 <h2>Akash M</h2>
                 <p>Hi, I'm Akash, a web developer and designer with a passion for modern web design.</p>
-                <a href="" class="btn">Hire Me</a>
+                <a href="contact.html" class="btn">Contact Me</a>
                 <div class="social-media">
                     <div>
                         <img src="images/instagram.png">
@@ -98,8 +175,16 @@
     <!-- ----------WORK------------- -->
     <section class="work section work-page padding">
         <h2 class="section-title">
-            Recent Projects
+            Recent Projects <p class="project-badge">24</p>
         </h2>
+
+        <!-- Project Filter Tabs -->
+        <div class="work-filters">
+            <button class="work-filter-btn active" data-filter="all">All Projects</button>
+            <button class="work-filter-btn" data-filter="full-stack">Full Stack</button>
+            <button class="work-filter-btn" data-filter="web-dev">Web Apps</button>
+            <button class="work-filter-btn" data-filter="ui-design">UI / Web Design</button>
+        </div>
 
         <div class="work-container container grid">
 
@@ -368,6 +453,9 @@
             </article>
 
         </div>
+
+        <!-- Project Pagination Controls -->
+        <div class="work-pagination" id="work-pagination"></div>
     </section>
 
 
@@ -425,8 +513,10 @@
         </div>
     </footer>
 
-    <!-- SCRIPT FILES  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- GSAP & Lenis Smooth Animation Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="js/color.js"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>

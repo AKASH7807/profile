@@ -18,9 +18,50 @@
 
 <body>
 
-    <!-- ----Loader- -->
+    <!-- ==========================================================================
+         CINEMATIC PRE-LOADER (Uiverse / Creative Agency Style)
+         ========================================================================== -->
     <div class="loader-container" id="loading">
-        <div class="loader"></div>
+        <div class="loader-backdrop">
+            <div class="loader-glow-orb orb-1"></div>
+            <div class="loader-glow-orb orb-2"></div>
+            <div class="loader-grid-lines"></div>
+        </div>
+        <div class="loader-content">
+            <div class="loader-card">
+                <!-- Spacious Holographic Orbital Spinner -->
+                <div class="loader-spinner-wrapper">
+                    <div class="loader-orbital-ring ring-outer"></div>
+                    <div class="loader-orbital-ring ring-mid"></div>
+                    <div class="loader-orbital-ring ring-inner"></div>
+                    <div class="loader-core-badge">
+                        <span class="loader-monogram">AM</span>
+                    </div>
+                </div>
+                <!-- Neumorphic Branding & Typography -->
+                <div class="loader-brand">
+                    <h2 class="loader-brand-title">Akash M</h2>
+                    <div class="loader-brand-subtitle">
+                        <span class="loader-typing-text">PORTFOLIO EXPERIENCE</span>
+                    </div>
+                </div>
+                <!-- Neumorphic Inset Progress Track -->
+                <div class="loader-progress-box">
+                    <div class="loader-progress-track">
+                        <div class="loader-progress-bar" id="loader-progress-bar">
+                            <span class="loader-progress-shimmer"></span>
+                        </div>
+                    </div>
+                    <div class="loader-progress-meta">
+                        <span class="loader-status" id="loader-status">INITIALIZING...</span>
+                        <span class="loader-percentage" id="loader-percentage">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cinematic Reveal Curtains -->
+        <div class="loader-curtain loader-curtain-top"></div>
+        <div class="loader-curtain loader-curtain-bottom"></div>
     </div>
 
     <!-- =======NAV============ -->
@@ -28,74 +69,168 @@
         <nav class="nav container">
             <a href="index.html" class="nav-logo">Akash M</a>
 
-            <div class="nav-menu " id="nav-menu">
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-menu-header">
+                    <span class="nav-menu-logo">Akash M</span>
+                    <div class="nav-close" id="nav-close" aria-label="Close menu">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
                 <ul class="nav-list" id="navigation">
                     <li class="nav-item">
-                        <a href="index.html" class="list">Home</a>
+                        <a href="index.html" class="list">
+                            <i class="ri-home-4-line nav-icon"></i>
+                            <span>Home</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="list">About Me</a>
+                        <a href="about.html" class="list">
+                            <i class="ri-user-3-line nav-icon"></i>
+                            <span>About Me</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a href="work.html" class="list">Portfolio</a>
+                        <a href="work.html" class="list">
+                            <i class="ri-briefcase-3-line nav-icon"></i>
+                            <span>Portfolio</span>
+                        </a>
                     </li>
                     <li class="nav-item nav-btn">
                         <a href="contact.html" class="list">
-                            <p class="nav-button">Contact Me</p>
+                            <p class="nav-button">
+                                <i class="ri-mail-send-line"></i> Contact Me
+                            </p>
                         </a>
                     </li>
                 </ul>
-                <!-- close button  -->
-                <div class="nav-close" id="nav-close">
-                    <i class="ri-close-line" id="close"></i>
+
+                <div class="nav-menu-footer">
+                    <div class="nav-social-links">
+                        <a href="https://github.com/akash7807" target="_blank" class="nav-social-item" aria-label="GitHub">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/akash7807/" target="_blank" class="nav-social-item" aria-label="LinkedIn">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="https://dribbble.com/Akash7807" target="_blank" class="nav-social-item" aria-label="Dribbble">
+                            <i class="ri-dribbble-line"></i>
+                        </a>
+                    </div>
+                    <span class="nav-status-tag">Building Something Great</span>
                 </div>
             </div>
 
             <div class="nav-actions">
-                <i class="ri-moon-foggy-line change-theme" id="theme-button"></i>
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="ri-menu-5-line" id="white"></i>
+                <i class="ri-moon-foggy-line change-theme" id="theme-button" aria-label="Toggle theme"></i>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+                    <i class="ri-menu-4-line"></i>
                 </div>
             </div>
 
         </nav>
     </header>
+    <div class="nav-overlay" id="nav-overlay"></div>
 
     <!-- -----------HERO--------------- -->
     <main class="main">
-        <section class="home section">
-            <div class="home-rectangle"></div>
+        <section class="home section" id="home">
+            <!-- Modern Ambient Background Shapes & Gentle Motion Elements -->
+            <div class="home-bg-effects" aria-hidden="true">
+                <div class="home-ambient-glow glow-1"></div>
+                <div class="home-ambient-glow glow-2"></div>
+                <div class="home-ambient-glow glow-3"></div>
+                <div class="home-grid-pattern"></div>
+                <div class="home-geometric-ring ring-1"></div>
+                <div class="home-geometric-ring ring-2"></div>
+            </div>
 
             <div class="home-container grid">
                 <div class="home-profile">
-                    <div class="profile-container">
-                        <img src="images/profile.png" class="profile-img">
+                    <div class="profile-wrapper">
+                        <!-- Radiant Ambient Aura behind Avatar -->
+                        <div class="profile-aura"></div>
+
+                        <!-- Neumorphic Profile Circle Frame -->
+                        <div class="profile-container">
+                            <img src="images/profile.png" alt="Akash M" class="profile-img">
+                        </div>
                     </div>
                 </div>
+
                 <div class="home-content grid">
                     <div class="home-data grid">
+                        <!-- Creator Status Pill -->
+                        <div class="home-badge-wrapper">
+                            <span class="home-status-pill">
+                                <span class="status-pulse-dot"></span>
+                                Building Something Great
+                            </span>
+                        </div>
+
                         <h1 class="home-name">Akash M</h1>
-                        <h2 class="home-profession">Web Designer &<span> Developer</span></h2>
+                        <h2 class="home-profession">Web Designer & <span>Developer</span></h2>
 
                         <div class="home-social">
-                            <a href="https://github.com/akash7807" target="_blank" class="home-social-link">
+                            <a href="https://github.com/akash7807" target="_blank" class="home-social-link" aria-label="GitHub">
                                 <i class="ri-github-fill"></i>
                             </a>
 
-                            <a href="https://www.linkedin.com/in/akash7807/" target="_blank" class="home-social-link">
+                            <a href="https://www.linkedin.com/in/akash7807/" target="_blank" class="home-social-link" aria-label="LinkedIn">
                                 <i class="ri-linkedin-box-fill"></i>
                             </a>
 
-                            <a href="https://dribbble.com/Akash7807" target="_blank" class="home-social-link">
+                            <a href="https://dribbble.com/Akash7807" target="_blank" class="home-social-link" aria-label="Dribbble">
                                 <i class="ri-dribbble-line"></i>
                             </a>
                         </div>
 
-                        <a href="https://drive.google.com/file/d/1BjigK1snQLXMXmZCHVRunAogPfiC5uTS/view?usp=sharing"
-                            target="_blank" class="home-button btn" id="cv" download>My Resume
-                            <i class="ri-arrow-right-double-line"></i>
-                        </a>
+                        <div class="home-buttons-group">
+                            <a href="https://drive.google.com/file/d/1BjigK1snQLXMXmZCHVRunAogPfiC5uTS/view?usp=sharing"
+                                target="_blank" class="home-button btn" id="cv" download>
+                                <span>My Resume</span>
+                                <i class="ri-arrow-right-double-line"></i>
+                            </a>
+                            <a href="contact.html" class="home-button-secondary">
+                                <span>Let's Talk</span>
+                                <i class="ri-chat-3-line"></i>
+                            </a>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Infinite Running Text Ticker Banner -->
+            <div class="hero-ticker" aria-hidden="true">
+                <div class="hero-ticker-track">
+                    <div class="hero-ticker-content">
+                        <span class="ticker-text"><i class="ri-sparkling-fill ticker-icon"></i> Frontend & UI Design</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-stack-line ticker-icon"></i> MERN Stack Development</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-rocket-line ticker-icon"></i> Scalable Web Applications</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-code-box-line ticker-icon"></i> Clean Code Architecture</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-flashlight-line ticker-icon"></i> High Performance Web</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-terminal-box-line ticker-icon"></i> Modern User Experience</span>
+                        <span class="ticker-bullet">✦</span>
+                    </div>
+                    <div class="hero-ticker-content" aria-hidden="true">
+                        <span class="ticker-text"><i class="ri-sparkling-fill ticker-icon"></i> Frontend & UI Design</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-stack-line ticker-icon"></i> MERN Stack Development</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-rocket-line ticker-icon"></i> Scalable Web Applications</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-code-box-line ticker-icon"></i> Clean Code Architecture</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-flashlight-line ticker-icon"></i> High Performance Web</span>
+                        <span class="ticker-bullet">✦</span>
+                        <span class="ticker-text"><i class="ri-terminal-box-line ticker-icon"></i> Modern User Experience</span>
+                        <span class="ticker-bullet">✦</span>
                     </div>
                 </div>
             </div>
@@ -103,11 +238,11 @@
     </main>
 
 
-    <!-- ---------SERVICES & OFFERS----------- -->
+    <!-- ---------AREAS OF EXPERTISE----------- -->
     <section class="services-container services section padding">
         <h2 class="section-title">
-            The services <br>
-            I Provide
+            Areas of <br>
+            Expertise
         </h2>
         <div class="services-container services-grid container grid">
             <article class="services-card">
@@ -199,13 +334,110 @@
     </section>
 
 
-    <!-- --------NOTES & PDF-------- -->
+    <!-- --------FEATURED RESOURCES & LINKS-------- -->
     <div class="project-links">
-        <h3 class="link-title section-title">Project Link</h3>
+        <h3 class="link-title section-title">Featured Links & Resources</h3>
         <section class="work section link-page padding">
 
-            <div class="left mobile">
-                <img src="images/mobile.png" alt="mobile">
+            <!-- Modern Interactive Phone Mockup Showcase -->
+            <div class="left mobile link-showcase-column">
+                <div class="phone-mockup-wrapper">
+                    <!-- Radiant Ambient Aura Glow behind the phone -->
+                    <div class="phone-ambient-aura"></div>
+
+                    <!-- Floating Interactive Badges / Labels anchored around phone -->
+                    <div class="phone-float-label label-top-right">
+                        <span class="label-beacon"></span>
+                        <i class="ri-smartphone-line"></i>
+                        <span>Mobile First</span>
+                    </div>
+                    <div class="phone-float-label label-bottom-left">
+                        <i class="ri-sparkling-fill label-sparkle"></i>
+                        <span>Interactive UI</span>
+                    </div>
+
+                    <!-- The Phone Hardware Device Frame -->
+                    <div class="phone-device">
+                        <!-- Side Hardware Buttons -->
+                        <div class="phone-btn-power"></div>
+                        <div class="phone-btn-vol-up"></div>
+                        <div class="phone-btn-vol-down"></div>
+
+                        <!-- Glass Screen Surface -->
+                        <div class="phone-screen">
+                            <!-- Status Bar -->
+                            <div class="phone-status-bar">
+                                <span class="phone-status-time">9:41</span>
+                                <div class="phone-dynamic-island">
+                                    <span class="island-camera"></span>
+                                    <span class="island-sensor"></span>
+                                </div>
+                                <div class="phone-status-icons">
+                                    <i class="ri-signal-tower-fill"></i>
+                                    <i class="ri-wifi-line"></i>
+                                    <i class="ri-battery-2-charge-line"></i>
+                                </div>
+                            </div>
+
+                            <!-- Phone In-App Profile Header -->
+                            <div class="phone-app-header">
+                                <div class="phone-avatar-wrap">
+                                    <img src="images/profile.png" alt="Akash M" class="phone-avatar-img">
+                                    <span class="phone-avatar-badge"><i class="ri-check-line"></i></span>
+                                </div>
+                                <div class="phone-app-info">
+                                    <h4 class="phone-app-name">Akash M</h4>
+                                    <p class="phone-app-handle">@akash7807 • Developer</p>
+                                </div>
+                            </div>
+
+                            <!-- Phone In-App Previews Feed -->
+                            <div class="phone-screen-feed">
+                                <!-- Mini Card 1: Blog -->
+                                <div class="phone-feed-card blog-preview">
+                                    <div class="feed-card-header">
+                                        <span class="feed-tag"><i class="ri-article-line"></i> Tech Blog</span>
+                                        <span class="feed-live-dot">Live</span>
+                                    </div>
+                                    <h5 class="feed-card-title">Clean Code & Web Architecture</h5>
+                                    <div class="feed-card-footer">
+                                        <span>akblog.store</span>
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Mini Card 2: Resume / Experience -->
+                                <div class="phone-feed-card resume-preview">
+                                    <div class="feed-card-header">
+                                        <span class="feed-tag"><i class="ri-file-user-line"></i> Verified CV</span>
+                                        <span class="feed-pill">2026</span>
+                                    </div>
+                                    <h5 class="feed-card-title">Full Stack Engineer Experience</h5>
+                                    <div class="feed-card-footer">
+                                        <span>PDF • Updated</span>
+                                        <i class="ri-download-2-line"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Mini Card 3: Design Showcase -->
+                                <div class="phone-feed-card design-preview">
+                                    <div class="feed-card-header">
+                                        <span class="feed-tag"><i class="ri-palette-line"></i> UI/UX Kit</span>
+                                    </div>
+                                    <div class="feed-color-strip">
+                                        <span class="color-dot c1"></span>
+                                        <span class="color-dot c2"></span>
+                                        <span class="color-dot c3"></span>
+                                        <span class="color-dot c4"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone Home Indicator Bar -->
+                            <div class="phone-home-indicator"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="right">
@@ -249,6 +481,14 @@
         <h2 class="section-title">
             Recent Projects <p class="project-badge">24</p>
         </h2>
+
+        <!-- Project Filter Tabs -->
+        <div class="work-filters">
+            <button class="work-filter-btn active" data-filter="all">All Projects</button>
+            <button class="work-filter-btn" data-filter="full-stack">Full Stack</button>
+            <button class="work-filter-btn" data-filter="web-dev">Web Apps</button>
+            <button class="work-filter-btn" data-filter="ui-design">UI / Web Design</button>
+        </div>
 
         <div class="work-container container grid">
 
@@ -517,6 +757,9 @@
             </article>
 
         </div>
+
+        <!-- Project Pagination Controls -->
+        <div class="work-pagination" id="work-pagination"></div>
     </section>
 
 
@@ -573,21 +816,21 @@
         </div>
     </section>
 
-    <!-- =============Testimonial=========  -->
+    <!-- =============User & Visitor Feedback=========  -->
     <section class="section testimonial_container">
         <div class="testimonial_header">
-            <h2 class="section-title">Client Feedback</h2>
-            <p>What Our Clients Say About Us</p>
+            <h2 class="section-title">User Feedback</h2>
+            <p>What visitors and peers say about my portfolio & work</p>
         </div>
 
         <div class="testimonials">
 
             <div class="testimonial">
                 <div class="testimonial-header">
-                    <img src="images/user1.jpeg" alt="sam" class="testimonial-image">
+                    <img src="images/user1.jpeg" alt="Sam" class="testimonial-image">
                     <div>
                         <p class="testimonial-name">Sam Sundar</p>
-                        <p class="testimonial-address">Ambur, Tamil Nadu</p>
+                        <p class="testimonial-address">Web Developer & Visitor</p>
                     </div>
                 </div>
                 <div class="testimonial-rating">
@@ -597,8 +840,7 @@
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
                 </div>
-                <p class="testimonial-review">"I am very impressed with the quality of the work done. The project is
-                    well-made and shows great attention to detail."</p>
+                <p class="testimonial-review">"Loved exploring this portfolio! The neumorphic design and smooth glass animations feel super clean and responsive on every screen."</p>
             </div>
 
             <div class="testimonial">
@@ -607,7 +849,7 @@
                         class="testimonial-image">
                     <div>
                         <p class="testimonial-name">Arjun Reddy</p>
-                        <p class="testimonial-address">Chennai, Tamil Nadu</p>
+                        <p class="testimonial-address">UI/UX Enthusiast</p>
                     </div>
                 </div>
                 <div class="testimonial-rating">
@@ -615,10 +857,9 @@
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
-                    <span class="star">&#9734;</span>
+                    <span class="star filled">&#9733;</span>
                 </div>
-                <p class="testimonial-review">"I recently had a landing page built and it exceeded my expectations! It’s
-                    modern, responsive, and perfectly captures my vision."</p>
+                <p class="testimonial-review">"The attention to detail in the layout and interactive elements is impressive. Great collection of projects and really sleek color palette."</p>
             </div>
 
             <div class="testimonial">
@@ -626,7 +867,7 @@
                     <img src="images/user2.jpg" alt="Riya" class="testimonial-image">
                     <div>
                         <p class="testimonial-name">Riya</p>
-                        <p class="testimonial-address">Bellandur, Bengaluru</p>
+                        <p class="testimonial-address">Creative Designer</p>
                     </div>
                 </div>
                 <div class="testimonial-rating">
@@ -636,8 +877,7 @@
                     <span class="star filled">&#9733;</span>
                     <span class="star filled">&#9733;</span>
                 </div>
-                <p class="testimonial-review">"My e-commerce store project looks amazing! The colors, layout, and design
-                    are fantastic. I'm really happy with it!"</p>
+                <p class="testimonial-review">"Very inspiring personal portfolio! Everything from the project showcases to the smooth dark mode transition feels thoughtfully crafted."</p>
             </div>
         </div>
     </section>
@@ -709,8 +949,10 @@
         </a>
     </footer>
 
-    <!-- SCRIPT FILES  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- GSAP & Lenis Smooth Animation Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/animation.js"></script>
 

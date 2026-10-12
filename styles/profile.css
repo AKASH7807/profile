@@ -1,135 +1,250 @@
-@font-face {
-    font-family: "disney";
-    src: url(font/waltograph42.otf);
-}
-
-@font-face {
-    font-family: "normal";
-    src: url(font/sofia.otf);
-}
-
-@font-face {
-    font-family: "font";
-    src: url(font/Geizer.otf);
-}
+/* ==========================================================================
+   PROFILE SUMMARY CARD (profile.css)
+   Neumorphic & Glassy Profile Card for work.html
+   Targeting User's Exact Classes in work.html
+   ========================================================================== */
 
 #profile-cart {
-    justify-content: center;
     display: flex;
-
+    justify-content: center;
+    padding-top: calc(var(--header-height) + 2.5rem);
+    padding-bottom: 2rem;
+    width: 100%;
 }
 
+.profile-card {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 1rem;
+}
+
+/* Floating Glassy Profile Card (Clean Subtle Shadows, No Muddy Overload) */
 .profile {
-    width: 80%;
-    max-width: 320px;
-    background: #32384f;
+    width: 100%;
+    max-width: 390px;
+    background: var(--card-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--neu-border);
+    border-radius: 28px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
     text-align: center;
-    padding: 20px 20px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    color: #fff;
+    padding: 2rem 1.6rem;
+    color: var(--title-color);
     user-select: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                background 0.35s ease,
+                border-color 0.35s ease;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.active {
-    background: #fff;
-    color: #32384f;
+.profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09), 0 0 20px var(--first-color-glow);
+    border-color: rgba(59, 130, 246, 0.45);
 }
 
+body.dark-theme .profile {
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(99, 102, 241, 0.15);
+}
+
+body.dark-theme .profile:hover {
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 25px rgba(59, 130, 246, 0.3);
+    border-color: rgba(99, 102, 241, 0.5);
+}
+
+/* Top Action Controls (Glass Pills) */
 .top-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-size: 1rem;
+    color: var(--text-color);
 }
 
-i:hover {
+.top-icons i {
     cursor: pointer;
-    color: #e4e;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: var(--neu-border);
+    color: var(--title-color);
 }
 
-.fa-heart {
-    margin-left: 10px;
+body.dark-theme .top-icons i {
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.top-icons i:hover {
+    color: var(--first-color);
+    transform: scale(1.1);
+    border-color: rgba(59, 130, 246, 0.45);
+}
+
+.top-icons .color {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
 }
 
 #change {
-    margin: 0 10px;
-    color: #ff7200;
+    color: #f59e0b;
+}
+
+body.dark-theme #change {
+    color: #60a5fa;
+}
+
+/* Profile Avatar Well */
+#p-card {
+    display: flex;
+    justify-content: center;
+    margin-block: 1.25rem 1rem;
 }
 
 .user-img {
-    margin-top: 20px;
-    width: 100px;
-    height: 100px;
-    background-position: center;
-    background-size: contain;
+    width: 105px;
+    height: 105px;
     border-radius: 50%;
+    object-fit: cover;
+    background: var(--container-color);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    border: 3px solid var(--first-color-light);
+    padding: 3px;
+    transition: transform 0.4s ease;
 }
 
-#p-card {
-    justify-content: center;
-    display: flex;
+.profile:hover .user-img {
+    transform: scale(1.04);
 }
 
+/* Title & Bio */
 .profile h2 {
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 20px;
-    font-family: "normal";
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 0.35rem;
 }
 
 .profile p {
-    letter-spacing: 1px;
-    font-size: 12px;
-    font-family: "normal";
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    line-height: 1.55;
+    margin-bottom: 1.35rem;
 }
 
-.profile-card {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-}
-
-.btn {
-    color: #fff;
+/* Primary Action Button */
+.profile .btn {
     border-radius: 30px;
-    padding: 10px 40px;
-    background: linear-gradient(to right, #8d68c5, #e34494);
+    padding: 0.75rem 2.25rem;
+    background: var(--btn-gradient) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: var(--small-font-size);
+    box-shadow: var(--btn-shadow);
     display: inline-block;
-    margin: 25px 0;
-    font-size: 15px;
-    font-family: "font";
-    letter-spacing: 2px;
-    transition: 1s;
+    margin-bottom: 1.75rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
-.btn:hover {
-    transform: scale(0.9);
-    transition: 1s;
+.profile .btn:hover {
+    background: var(--btn-gradient-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--btn-shadow-hover);
 }
 
+.profile .btn:active {
+    transform: translateY(0);
+    box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Social Metrics Grid (Zero-Overflow, Perfectly Contained) */
 .social-media {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.social-media img {
-    width: 60px;
-    border-radius: 50%;
-}
-
-.social-media h3 {
-    font-weight: 500;
-    font-size: 16px;
-    font-family: "disney";
-}
-
-.social-media p {
-    font-family: "disney";
-    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+    padding-top: 1.25rem;
+    border-top: var(--neu-border);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .social-media div {
-    margin: 10px 0 30px;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    padding: 0.75rem 0.35rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: var(--neu-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+body.dark-theme .social-media div {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-media div:hover {
+    transform: translateY(-3px);
+    border-color: rgba(59, 130, 246, 0.45);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.16);
+}
+
+.social-media img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    margin-inline: auto;
+    margin-bottom: 0.35rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.social-media div:hover img {
+    transform: scale(1.15) rotate(4deg);
+}
+
+.social-media h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--title-color);
+    margin-bottom: 0.15rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.social-media p {
+    font-size: 0.68rem;
+    color: var(--text-color-light);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.35px;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
